@@ -17,13 +17,13 @@ def draw_snow_person(x, y):
     arcade.draw_point(x, y, arcade.color.RED, 5)
 
     # Snow
-    arcade.draw_circle_filled(300 + x, 200 + y, 60, arcade.color.WHITE)
+    arcade.draw_circle_filled(300 + x, 200 + y, 60, arcade.color.RED_DEVIL)
     arcade.draw_circle_filled(300 + x, 280 + y, 50, arcade.color.WHITE)
-    arcade.draw_circle_filled(300 + x, 340 + y, 40, arcade.color.WHITE)
+    arcade.draw_circle_filled(300 + x, 340 + y, 40, arcade.color.ROYAL_BLUE)
 
     # Eyes
-    arcade.draw_circle_filled(285 + x, 350 + y, 5, arcade.color.BLACK)
-    arcade.draw_circle_filled(315 + x, 350 + y, 5, arcade.color.BLACK)
+    arcade.draw_circle_filled(285 + x, 350 + y, 5, arcade.color.YELLOW)
+    arcade.draw_circle_filled(315 + x, 350 + y, 5, arcade.color.YELLOW)
 
 def on_update(delta_time):
     pass
@@ -35,6 +35,7 @@ def on_draw():
     draw_grass()
     draw_snow_person(50, 50)
     draw_snow_person(175, 50)
+    draw_snow_person(325, 50)
 
 
 
