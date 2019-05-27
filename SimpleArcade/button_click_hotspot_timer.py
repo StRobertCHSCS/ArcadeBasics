@@ -16,14 +16,13 @@ HEIGHT = 480
 # There are better ways to represent buttons
 my_button = [100, 200, 150, 50]  # x, y, width, height
 show_text = False
-show_time_limit = 3 # seconds
+show_time_limit = 3 #seconds
 show_time = 0
 
 
 def on_update(delta_time):
     global show_time, show_text
     show_time += delta_time
-    print(show_time)
 
     if show_time < show_time_limit and show_text:
         show_text = True
